@@ -71,7 +71,7 @@ console.log("Configuracao de ambiente: ", caminhoAtual, temCouD);
 if (temCouD) {
     module.exports = {
         base: dbLocal,
-        chave: "fus1on-crm-online-@@-crm",
+        chave: "Aqui-sua-chave-@@",
         sessao: { session: false },
         urlBase: "/apicliente",
         emailEnvio: emailEnvio,
@@ -80,7 +80,7 @@ if (temCouD) {
 } else {
     module.exports = {
         base: dbAzure,
-        chave: "fus1on-crm-online-@@-crm",
+        chave: "Aqui-sua-chave-@@",
         sessao: { session: false },
         urlBase: "/apicliente",
         emailEnvio: emailEnvio,
