@@ -1,0 +1,29 @@
+{
+  "name": "generator-dpnnodecli",
+  "version": "1.0.0",
+  "description": "Template BackEnd Node do Dupan",
+  "files": [
+    "app"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hugodupan/DpnNodeCli.git"
+  },
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "author": "Hugo N. Borges",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hugodupan/DpnNodeCli/issues"
+  },
+  "homepage": "https://github.com/hugodupan/DpnNodeCli#readme",
+  "dependencies": {
+    "yeoman-generator": "^2.0.0",
+    "yosay": "^2.0.1"
+  }
+}
