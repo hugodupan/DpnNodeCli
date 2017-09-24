@@ -58,18 +58,7 @@ const dbLocal = {
     },
 };
 
-var caminhoAtual = __dirname.toLowerCase();
-var temCouD = caminhoAtual.indexOf("c:\\") >= 0 && caminhoAtual.toLowerCase().indexOf("fusion") >= 0;
-if (!temCouD) {
-    temCouD = caminhoAtual.indexOf("D:\\") >= 0 && caminhoAtual.toLowerCase().indexOf("fusion") >= 0;
-}
-
-// temCouD = false;
-
-console.log("Configuracao de ambiente: ", caminhoAtual, temCouD);
-
-if (temCouD) {
-    module.exports = {
+module.exports = {
         base: dbLocal,
         chave: "Aqui-sua-chave-@@",
         sessao: { session: false },
@@ -77,14 +66,3 @@ if (temCouD) {
         emailEnvio: emailEnvio,
         opcoesEmail: opcoesEmail
     };
-} else {
-    module.exports = {
-        base: dbAzure,
-        chave: "Aqui-sua-chave-@@",
-        sessao: { session: false },
-        urlBase: "/apicliente",
-        emailEnvio: emailEnvio,
-        opcoesEmail: opcoesEmail
-        
-    };
-}
