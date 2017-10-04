@@ -1,0 +1,42 @@
+{
+    "name": "aqui_coloque_o_nome_do_seu_projeto",
+    "version": "1.0.0",
+    "description": "aqui_coloque_a_descricao_do_seu_projeto",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js",
+        "dev": "nodemon server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+AQUI_COLOQUE O ENDEREÇO GIT DO SEU PROJETO"
+    },
+    "author": "Vife Soluções OnLine",
+    "license": "ISC",
+    "engines": {
+        "node": "~8.0.0",
+        "npm": "~5.0.2"
+    },
+    "homepage": "AQUI_COLOQUE O ENDEREÇO DO SEU PROJETO",
+    "dependencies": {
+        "body-parser": "^1.17.2",
+        "consign": "^0.1.5",
+        "cors": "^2.8.3",
+        "express": "^4.15.4",
+        "jwt-simple": "^0.5.1",
+        "lodash": "^4.17.4",
+        "moment": "^2.18.1",
+        "mysql2": "^1.4.0",
+        "node-cron": "^1.2.1",
+        "nodemailer": "^2.6.4",
+        "passport": "^0.3.2",
+        "passport-jwt": "^2.2.1",
+        "sequelize": "^4.4.3",
+        "simple-encryptor": "^1.1.0",
+        "useragent": "^2.1.13"
+    },
+    "devDependencies": {
+        "nodemon": "^1.11.0"
+    }
+}
