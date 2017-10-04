@@ -1,6 +1,6 @@
 {
   "name": "generator-dpnnodecli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Template BackEnd Node do Dupan",
   "files": [
     "app"
