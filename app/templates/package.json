@@ -12,7 +12,7 @@
         "type": "git",
         "url": "git+AQUI_COLOQUE O ENDEREÇO GIT DO SEU PROJETO"
     },
-    "author": "Vife Soluções OnLine",
+    "author": "AQUI COLOQUE O AUTHOR",
     "license": "ISC",
     "engines": {
         "node": "~8.0.0",
