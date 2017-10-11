@@ -7,8 +7,8 @@ module.exports = app => {
     if (!controles) {
         controles = {};
 
-        //Controles
-        const dir = path.join(__dirname, "../controles");
+        //Servicos
+        const dir = path.join(__dirname, "../servicos");
         fs.readdirSync(dir).forEach(controleNome => {
             const controleDir = path.join(dir, controleNome);
             const controleRequisitado = require(controleDir)(app);
