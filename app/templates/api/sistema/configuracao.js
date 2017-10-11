@@ -62,7 +62,7 @@ module.exports = {
         base: dbLocal,
         chave: "Aqui-sua-chave-@@",
         sessao: { session: false },
-        urlBase: "/apicliente",
+        urlBase: "/api",
         emailEnvio: emailEnvio,
         opcoesEmail: opcoesEmail
     };
