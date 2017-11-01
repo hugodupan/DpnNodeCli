@@ -2,18 +2,17 @@ var path = require('path');
 
 const emailEnvio = 'alerta@vife.com.br';
 const opcoesEmail = {
-
-/**
+  /**
  * AQUI VOCÊ COLOCA SUAS CONFIGURAÇÕES DE EMAIL
  */
 
-    host: 'smtp.seuDominio.net',
-    port: 587,
-    secure: false,
-    auth: {
-        user: 'seuUsuario',
-        pass: 'suaSenha'
-    }
+  host: 'smtp.seuDominio.net',
+  port: 587,
+  secure: false,
+  auth: {
+    user: 'seuUsuario',
+    pass: 'suaSenha'
+  }
 };
 
 /**
@@ -21,20 +20,20 @@ const opcoesEmail = {
  */
 
 const dbAzure = {
-    database: "nomeDaDataBase",
-    username: "usuarioDaDataBase",
-    password: "suaSenhaDaDataBase",
-    params: {
-        dialect: "mysql",
-        timezone: '-03:00',
-        /**
+  database: 'nomeDaDataBase',
+  username: 'usuarioDaDataBase',
+  password: 'suaSenhaDaDataBase',
+  params: {
+    dialect: 'mysql',
+    timezone: '-03:00',
+    /**
          * seu host. Ex: br-cdbr-azure-south-b.cloudapp.net"
          */
-        host: "br-seu-endereco",
-        define: {
-            underscored: true
-        }
-    },
+    host: 'br-seu-endereco',
+    define: {
+      underscored: true
+    }
+  }
 };
 
 /**
@@ -42,27 +41,29 @@ const dbAzure = {
  */
 
 const dbLocal = {
-    database: "nomeDaDataBase",
-    username: "usuarioDaDataBase",
-    password: "suaSenhaDaDataBase",
-    params: {
-        dialect: "mysql",
-        timezone: '-03:00',
-        /**
+  database: 'nomeDaDataBase',
+  username: 'usuarioDaDataBase',
+  password: 'suaSenhaDaDataBase',
+  params: {
+    dialect: 'mysql',
+    timezone: '-03:00',
+    /**
          * seu host. Ex: br-cdbr-azure-south-b.cloudapp.net"
          */
-        host: "localhost",
-        define: {
-            underscored: true
-        }
-    },
+    host: 'localhost',
+    define: {
+      underscored: true
+    }
+  }
 };
 
+///Configuração atual
+
 module.exports = {
-        base: dbLocal,
-        chave: "Aqui-sua-chave-@@",
-        sessao: { session: false },
-        urlBase: "/api",
-        emailEnvio: emailEnvio,
-        opcoesEmail: opcoesEmail
-    };
+  base: dbLocal,
+  chave: 'Aqui-sua-chave-@@',
+  sessao: { session: false },
+  urlBase: '/api',
+  emailEnvio: emailEnvio,
+  opcoesEmail: opcoesEmail
+};
